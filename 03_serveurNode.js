@@ -18,7 +18,7 @@ function affiche_objet(monObjet){
 }
 
 http.createServer(function(request, response) {
-  response.writeHead(200, {"Content-Type": "text/html"});
+  response.writeHead(200, {"Content-Type": "text/html"; "charset=utf-8";});
   response.write("<h1>Exercice_07</h1>");
   response.write(affiche_objet(obj));
   response.end();
