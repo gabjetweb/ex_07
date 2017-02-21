@@ -1,11 +1,9 @@
-var oProvince = {
-	"QC" : "Québec",
-	"ON" : "Ontario",
-	"AL" : "Alberta"
-}
+ var fs = require("fs");
+ console.log("\n *START* \n");
+ var content = fs.readFileSync("provinces.JSON");
+ console.log("Output Content : \n"+ content);
+ console.log("\n *EXIT* \n");
 
-oProvince['NB'] = "Nouveau-Brunswick"
-oProvince.MA = "Manitoba"
 
 var monObjet = oProvince
 
